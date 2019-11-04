@@ -57,6 +57,7 @@
     </Compile>
     <Compile Include="Labourer.cs" />
     <Compile Include="LabourerHandler.cs" />
+    <Compile Include="Machine.cs" />
     <Compile Include="MainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
