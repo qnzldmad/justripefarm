@@ -167,5 +167,7 @@ namespace Paractical07_re_
 
             dataGridView1.DataSource = labHnd.getAllLabourer(dbConn.getConn());
         }
+
+       
     }
 }

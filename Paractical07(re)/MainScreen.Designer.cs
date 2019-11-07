@@ -60,6 +60,8 @@
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnCheck = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.cbGender = new System.Windows.Forms.ComboBox();
@@ -74,16 +76,23 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnWholesaleAdd = new System.Windows.Forms.Button();
+            this.wholesaleDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.WholesaleSupplierTextBox = new System.Windows.Forms.TextBox();
+            this.WholesaleQuantityTextBox = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.wholesaleStockTypeComboBox = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.btnCheck = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnShopWholesale
@@ -417,6 +426,24 @@
             this.panel4.TabIndex = 9;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(450, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(256, 162);
+            this.dataGridView1.TabIndex = 12;
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(642, 193);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnCheck.TabIndex = 13;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.BtnCheck_Click);
+            // 
             // btnClear
             // 
             this.btnClear.Location = new System.Drawing.Point(642, 222);
@@ -525,7 +552,7 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.label13);
-            this.panel5.Location = new System.Drawing.Point(570, 356);
+            this.panel5.Location = new System.Drawing.Point(12, 621);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 100);
             this.panel5.TabIndex = 10;
@@ -541,44 +568,117 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.btnWholesaleAdd);
+            this.panel6.Controls.Add(this.wholesaleDateTimePicker);
+            this.panel6.Controls.Add(this.WholesaleSupplierTextBox);
+            this.panel6.Controls.Add(this.WholesaleQuantityTextBox);
+            this.panel6.Controls.Add(this.label22);
+            this.panel6.Controls.Add(this.label21);
+            this.panel6.Controls.Add(this.label20);
+            this.panel6.Controls.Add(this.label18);
+            this.panel6.Controls.Add(this.wholesaleStockTypeComboBox);
             this.panel6.Controls.Add(this.label14);
-            this.panel6.Location = new System.Drawing.Point(355, 373);
+            this.panel6.Location = new System.Drawing.Point(355, 267);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 100);
+            this.panel6.Size = new System.Drawing.Size(391, 171);
             this.panel6.TabIndex = 11;
+            // 
+            // btnWholesaleAdd
+            // 
+            this.btnWholesaleAdd.Location = new System.Drawing.Point(275, 136);
+            this.btnWholesaleAdd.Name = "btnWholesaleAdd";
+            this.btnWholesaleAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnWholesaleAdd.TabIndex = 9;
+            this.btnWholesaleAdd.Text = "Add";
+            this.btnWholesaleAdd.UseVisualStyleBackColor = true;
+            // 
+            // wholesaleDateTimePicker
+            // 
+            this.wholesaleDateTimePicker.Location = new System.Drawing.Point(150, 100);
+            this.wholesaleDateTimePicker.Name = "wholesaleDateTimePicker";
+            this.wholesaleDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.wholesaleDateTimePicker.TabIndex = 8;
+            // 
+            // WholesaleSupplierTextBox
+            // 
+            this.WholesaleSupplierTextBox.Location = new System.Drawing.Point(150, 70);
+            this.WholesaleSupplierTextBox.Name = "WholesaleSupplierTextBox";
+            this.WholesaleSupplierTextBox.Size = new System.Drawing.Size(100, 20);
+            this.WholesaleSupplierTextBox.TabIndex = 7;
+            // 
+            // WholesaleQuantityTextBox
+            // 
+            this.WholesaleQuantityTextBox.Location = new System.Drawing.Point(150, 42);
+            this.WholesaleQuantityTextBox.Name = "WholesaleQuantityTextBox";
+            this.WholesaleQuantityTextBox.Size = new System.Drawing.Size(100, 20);
+            this.WholesaleQuantityTextBox.TabIndex = 6;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(82, 42);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(52, 13);
+            this.label22.TabIndex = 5;
+            this.label22.Text = "Quantity :";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(50, 107);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(84, 13);
+            this.label21.TabIndex = 4;
+            this.label21.Text = "Purchase Date :";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(83, 70);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(51, 13);
+            this.label20.TabIndex = 3;
+            this.label20.Text = "Supplier :";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(61, 15);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(72, 13);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Stock Name :";
+            // 
+            // wholesaleStockTypeComboBox
+            // 
+            this.wholesaleStockTypeComboBox.AutoCompleteCustomSource.AddRange(new string[] {
+            "Soil",
+            "Fertilizer",
+            "Fruits Seeds",
+            "Plant Seeds"});
+            this.wholesaleStockTypeComboBox.FormattingEnabled = true;
+            this.wholesaleStockTypeComboBox.Items.AddRange(new object[] {
+            "fertilizer",
+            "soil",
+            "seeds"});
+            this.wholesaleStockTypeComboBox.Location = new System.Drawing.Point(150, 15);
+            this.wholesaleStockTypeComboBox.Name = "wholesaleStockTypeComboBox";
+            this.wholesaleStockTypeComboBox.Size = new System.Drawing.Size(121, 21);
+            this.wholesaleStockTypeComboBox.TabIndex = 1;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(61, 68);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(136, 13);
+            this.label14.Size = new System.Drawing.Size(0, 13);
             this.label14.TabIndex = 0;
-            this.label14.Text = "Shop/ Wholesale Screen...";
-            // 
-            // btnCheck
-            // 
-            this.btnCheck.Location = new System.Drawing.Point(642, 193);
-            this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(75, 23);
-            this.btnCheck.TabIndex = 13;
-            this.btnCheck.Text = "Check";
-            this.btnCheck.UseVisualStyleBackColor = true;
-            this.btnCheck.Click += new System.EventHandler(this.BtnCheck_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(450, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(256, 162);
-            this.dataGridView1.TabIndex = 12;
             // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 648);
+            this.ClientSize = new System.Drawing.Size(982, 746);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -602,11 +702,11 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -662,5 +762,14 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.DateTimePicker wholesaleDateTimePicker;
+        private System.Windows.Forms.TextBox WholesaleSupplierTextBox;
+        private System.Windows.Forms.TextBox WholesaleQuantityTextBox;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox wholesaleStockTypeComboBox;
+        private System.Windows.Forms.Button btnWholesaleAdd;
     }
 }
